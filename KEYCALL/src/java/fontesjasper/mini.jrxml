@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.6.0.final using JasperReports Library version 6.6.0  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Mini" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="2b721569-cc1d-453d-8975-e506e6821375">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="keycall"/>
+	<queryString language="SQL">
+		<![CDATA[select * from Mini]]>
+	</queryString>
+	<field name="idmini" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.label" value="idmini"/>
+	</field>
+	<field name="mindata" class="java.util.Date">
+		<property name="com.jaspersoft.studio.field.label" value="mindata"/>
+	</field>
+	<field name="minhorario" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="minhorario"/>
+	</field>
+	<field name="minresponsavel" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="minresponsavel"/>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band height="111" splitType="Stretch">
+			<textField>
+				<reportElement x="447" y="5" width="100" height="30" uuid="9e62218a-a574-4459-9f85-83e7cd6af250"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="61" width="560" height="30" uuid="955aa21a-4e11-41d9-a83b-e5441aec17b5"/>
+				<textElement textAlignment="Center">
+					<font size="18" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Reservas do Mini Auditório]]></text>
+			</staticText>
+			<image>
+				<reportElement x="3" y="5" width="150" height="45" uuid="aed58fad-e8a3-4772-afc3-37112c25f331"/>
+				<imageExpression><![CDATA["C:/Users/Cliente/Pictures/Versão-Horizontal-2.png"]]></imageExpression>
+			</image>
+			<line>
+				<reportElement x="-20" y="110" width="595" height="1" uuid="a243ed29-51fd-4d7f-ae98-4ffa3b1d87d2"/>
+			</line>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="38" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="80" height="30" uuid="0de2bc45-1a29-4fd7-8681-fe99529e5f22">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="1fb78a71-07e8-4d4a-8407-161c60a0b217"/>
+				</reportElement>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Horario]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="84" y="0" width="100" height="30" uuid="0de2bc45-1a29-4fd7-8681-fe99529e5f22">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="1fb78a71-07e8-4d4a-8407-161c60a0b217"/>
+				</reportElement>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Data]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="182" y="0" width="100" height="30" uuid="c7c0d399-a26f-47b3-9f35-4821e0995ac7">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="25b2a409-d198-4a35-be99-317fba620cae"/>
+				</reportElement>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Responsavel]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="21" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="80" height="20" uuid="f23fe801-830f-4de6-be97-999f1cf1f2d4">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="1fb78a71-07e8-4d4a-8407-161c60a0b217"/>
+				</reportElement>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{minhorario}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="84" y="0" width="100" height="20" uuid="f23fe801-830f-4de6-be97-999f1cf1f2d4">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="1fb78a71-07e8-4d4a-8407-161c60a0b217"/>
+				</reportElement>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{mindata}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="200" y="0" width="100" height="20" uuid="6a4482f2-ddfa-4bd1-a57c-c76c4487be47">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="25b2a409-d198-4a35-be99-317fba620cae"/>
+				</reportElement>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{minresponsavel}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="66" splitType="Stretch">
+			<textField pattern="dd/MM/yyyy">
+				<reportElement x="460" y="36" width="100" height="30" uuid="b36e696e-69a4-462a-a0a1-ac9c36833a2e"/>
+				<textElement>
+					<font size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="36" width="100" height="20" uuid="bed8a8b8-883b-4853-9184-afc436c112e9"/>
+				<textElement>
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[KeyCall]]></text>
+			</staticText>
+			<line>
+				<reportElement x="-17" y="35" width="595" height="1" uuid="47a4e358-635a-46ba-bf36-dbe5f600f637"/>
+			</line>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

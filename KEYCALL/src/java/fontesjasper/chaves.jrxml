@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.6.0.final using JasperReports Library version 6.6.0  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="chaves" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="98aae35d-012d-428e-9591-684f1fafcbd6">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="keycall"/>
+	<queryString language="SQL">
+		<![CDATA[select * from chave]]>
+	</queryString>
+	<field name="idchave" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.label" value="idchave"/>
+	</field>
+	<field name="chdataretirada" class="java.util.Date">
+		<property name="com.jaspersoft.studio.field.label" value="chdataretirada"/>
+	</field>
+	<field name="chsala" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="chsala"/>
+	</field>
+	<field name="chhorariore" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="chhorariore"/>
+	</field>
+	<field name="chdataentrada" class="java.util.Date">
+		<property name="com.jaspersoft.studio.field.label" value="chdataentrada"/>
+	</field>
+	<field name="chhorarioen" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="chhorarioen"/>
+	</field>
+	<field name="chresponsavelre" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="chresponsavelre"/>
+	</field>
+	<field name="chresponsavel" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="chresponsavel"/>
+	</field>
+	<group name="idchave">
+		<groupExpression><![CDATA[$F{idchave}]]></groupExpression>
+	</group>
+	<group name="chdataretirada">
+		<groupExpression><![CDATA[$F{chdataretirada}]]></groupExpression>
+	</group>
+	<group name="chsala">
+		<groupExpression><![CDATA[$F{chsala}]]></groupExpression>
+	</group>
+	<group name="chhorariore">
+		<groupExpression><![CDATA[$F{chhorariore}]]></groupExpression>
+	</group>
+	<group name="chdataentrada">
+		<groupExpression><![CDATA[$F{chdataentrada}]]></groupExpression>
+	</group>
+	<group name="chhorarioen">
+		<groupExpression><![CDATA[$F{chhorarioen}]]></groupExpression>
+	</group>
+	<group name="chresponsavelre">
+		<groupExpression><![CDATA[$F{chresponsavelre}]]></groupExpression>
+	</group>
+	<group name="chresponsavel">
+		<groupExpression><![CDATA[$F{chresponsavel}]]></groupExpression>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="7" splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band height="111" splitType="Stretch">
+			<image>
+				<reportElement x="3" y="5" width="150" height="45" uuid="7c3b83a9-4676-4792-9cbc-b7f0391302b0"/>
+				<imageExpression><![CDATA["C:/Users/Cliente/Pictures/Versão-Horizontal-2.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="0" y="61" width="560" height="30" uuid="e2ff05cf-cbd4-44de-b066-aae0e17559d9"/>
+				<textElement textAlignment="Center">
+					<font size="18" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Registro de Chaves]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="447" y="5" width="100" height="30" uuid="77c21a42-4b3c-4dce-9b3f-5d0ae8abe1d9"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="-20" y="110" width="595" height="1" uuid="1e4aab13-8d69-4b66-aba9-627be87f40dd"/>
+			</line>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="30" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="80" height="30" uuid="587be995-a376-44c1-a9e3-23c9539652b8">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="5a436063-91d1-4c62-b451-be3ad25b579f"/>
+				</reportElement>
+				<textElement>
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Data Retirada]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="80" y="0" width="50" height="30" uuid="d8d8ddaf-ef0f-4b7d-9e7d-39c7d18d7c0b">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="75a9742d-1dda-424d-bb7c-fd00cc39e4d8"/>
+				</reportElement>
+				<textElement>
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Sala]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="500" y="0" width="100" height="30" uuid="841992b3-13b9-47d3-9027-5f44fdf7b7d8">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="09c2dca2-ee5f-480e-95c3-f734fef3f81e"/>
+				</reportElement>
+				<textElement>
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Responsavel]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="120" y="0" width="110" height="30" uuid="9d27ab4b-8503-4110-bf1d-91b03c38f25b">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="296fff64-d2f1-46a9-8d00-f8706322254b"/>
+				</reportElement>
+				<textElement>
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Responsavel Retirada]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="240" y="0" width="100" height="30" uuid="fba689e4-1a50-45e5-b533-68e56809be2e">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="a9a7aab2-9809-49ac-be35-e2e3a70b97cf"/>
+				</reportElement>
+				<textElement>
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Horario Retirada]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="329" y="0" width="100" height="30" uuid="58fef2e6-7733-40de-aa09-d9cd61ac59cd">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="04c8a446-1200-4bc9-9648-6f0809bf238d"/>
+				</reportElement>
+				<textElement>
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Horario Entrada]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="412" y="0" width="100" height="30" uuid="a7412bd9-7aee-45c2-b947-7fdf41312448">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="4352470a-54bd-4e18-a2c2-904075bf7648"/>
+				</reportElement>
+				<textElement>
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Data Entrada]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="31" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="10" width="80" height="21" uuid="342f678a-91da-4d54-8ad2-6177080b3d38">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="5a436063-91d1-4c62-b451-be3ad25b579f"/>
+				</reportElement>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{chdataretirada}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="80" y="10" width="70" height="21" uuid="9106f92c-d4ab-44ac-96cf-985c9354943a">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="75a9742d-1dda-424d-bb7c-fd00cc39e4d8"/>
+				</reportElement>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{chsala}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="520" y="10" width="100" height="21" uuid="44606be0-9d57-45ea-9371-b28652f7b15f">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="09c2dca2-ee5f-480e-95c3-f734fef3f81e"/>
+				</reportElement>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{chresponsavel}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="153" y="10" width="70" height="21" uuid="c1cabe9e-7084-4477-9ec8-5829d3ded908">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="296fff64-d2f1-46a9-8d00-f8706322254b"/>
+				</reportElement>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{chresponsavelre}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="260" y="10" width="100" height="21" uuid="c10694c8-3147-41b2-bced-73cb50a8722a">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="a9a7aab2-9809-49ac-be35-e2e3a70b97cf"/>
+				</reportElement>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{chhorariore}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="350" y="10" width="100" height="21" uuid="8e68dff2-a44d-406b-ba98-0002f3d38150">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="04c8a446-1200-4bc9-9648-6f0809bf238d"/>
+				</reportElement>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{chhorarioen}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="412" y="10" width="100" height="21" uuid="605068d2-74b3-47cd-bce3-8f687ff882cf">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="4352470a-54bd-4e18-a2c2-904075bf7648"/>
+				</reportElement>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{chdataentrada}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="36" splitType="Stretch">
+			<line>
+				<reportElement x="-17" y="0" width="595" height="1" uuid="a045b56a-43ad-4d9b-a6b1-b6292126dc87"/>
+			</line>
+			<staticText>
+				<reportElement x="3" y="1" width="100" height="20" uuid="cdf8abe6-11b5-44f1-989e-555a98dc1a03"/>
+				<textElement>
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[KeyCall]]></text>
+			</staticText>
+			<textField pattern="dd/MM/yyyy">
+				<reportElement x="460" y="0" width="100" height="30" uuid="dabe5058-617e-4b48-a209-416e1db6662d"/>
+				<textElement>
+					<font size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
